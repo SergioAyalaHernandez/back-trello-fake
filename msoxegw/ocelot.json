@@ -1,0 +1,302 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/speciality",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msspeciality",
+          "Port": 8086
+        }
+      ],
+      "UpstreamPathTemplate": "/speciality",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/speciality/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msspeciality",
+          "Port": 8086
+        }
+      ],
+      "UpstreamPathTemplate": "/speciality/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msauth",
+          "Port": 8081
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/user",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msusers",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/user",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/user/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msusers",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/user/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/user/getById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msusers",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/user/getById/{id}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/user/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msusers",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/user/login",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/user/reset",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msusers",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/user/reset",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/CourtRooms/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msadmcourtrooms",
+          "Port": 8087
+        }
+      ],
+      "UpstreamPathTemplate": "/CourtRooms/",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/CourtRooms/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msadmcourtrooms",
+          "Port": 8087
+        }
+      ],
+      "UpstreamPathTemplate": "/CourtRooms/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/offices/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msadmoffices",
+          "Port": 8085
+        }
+      ],
+      "UpstreamPathTemplate": "/offices/",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/offices/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msadmoffices",
+          "Port": 8085
+        }
+      ],
+      "UpstreamPathTemplate": "/offices/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{everyting}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msadmlocalization",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/admin/{everyting}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Profile/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msprofiles",
+          "Port": 8083
+        }
+      ],
+      "UpstreamPathTemplate": "/profiles",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Profile/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msprofiles",
+          "Port": 8083
+        }
+      ],
+      "UpstreamPathTemplate": "/profiles/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Scheduler/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msscheduler",
+          "Port": 8090
+        }
+      ],
+      "UpstreamPathTemplate": "/scheduler",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/scheduler/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msscheduler",
+          "Port": 8090
+        }
+      ],
+      "UpstreamPathTemplate": "/scheduler/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/scheduler/findById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msscheduler",
+          "Port": 8090
+        }
+      ],
+      "UpstreamPathTemplate": "/scheduler/findById/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/permissions/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mspermissions",
+          "Port": 8084
+        }
+      ],
+      "UpstreamPathTemplate": "/permissions",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/permissions/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mspermissions",
+          "Port": 8084
+        }
+      ],
+      "UpstreamPathTemplate": "/permissions/{id}",
+      "UpstreamHttpMethod": [
+        "PATCH"
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5210"
+  }
+}

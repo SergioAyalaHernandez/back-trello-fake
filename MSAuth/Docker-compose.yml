@@ -1,0 +1,14 @@
+version: '3'
+services:
+  msauth:
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    depends_on:
+      - msspeciality-mongodb-1
+
+networks:
+  appNetwork:
+    external:
+      name: appNetwork
