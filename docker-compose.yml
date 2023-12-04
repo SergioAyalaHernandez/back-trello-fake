@@ -22,6 +22,15 @@ services:
       - fluentd
     networks:
       - appNetwork
+  msstrello:
+    build:
+      context: ./TrelloFake
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./TrelloFake:/usr/src/app
+    networks:
+      - appNetwork
 
   msauth:
     build:
